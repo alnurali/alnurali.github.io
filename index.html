@@ -138,7 +138,15 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <!-- Total hack so that the anchor goes to the right place in spite of the
+      <style>
+  .my_author {
+    a {
+      margin-bottom: 1rem; border-bottom: 1px dashed #B71C1C; &:hover { border-bottom-style: solid; text-decoration: none; }
+    }
+  }  
+</style>
+
+<!-- Total hack so that the anchor goes to the right place in spite of the
 header -->
 <p style="position:relative;">
   <a name="about" style="position:absolute; top:-200px;"></a>
@@ -166,7 +174,7 @@ University</a>, where I worked with <a href="https://web.stanford.edu/~jduchi/"
 Duchi</a>, 
 <a href="http://web.stanford.edu/~boyd/" target="\_blank">Stephen Boyd</a>, and <a href="http://statweb.stanford.edu/~gwalther/" target="\_blank">Guenther
 Walther</a> on “AI safety” and understanding “why (modern) machine learning works”.  I did my Ph.D. in <a href="https://www.ml.cmu.edu/" target="\_blank">Machine Learning</a> at <a href="https://www.cmu.edu/" target="\_blank">Carnegie Mellon University</a>, where I worked with <a href="https://www.stat.berkeley.edu/~ryantibs/index.html" target="\_blank">Ryan
-Tibshirani</a> and <a href="http://zicokolter.com/">Zico Kolter</a> on statistics, machine learning, and optimization, with applications to sustainable energy, education policy, and quantitative finance.</p>
+Tibshirani</a> and <a href="http://zicokolter.com/" target="\_blank">Zico Kolter</a> on statistics, machine learning, and optimization, with applications to sustainable energy, education policy, and quantitative finance.</p>
 
 <p>And before Stanford and Carnegie Mellon, I worked at <a href="https://www.microsoft.com/en-us/research/" target="\_blank">Microsoft</a> and <a href="https://www.microsoft.com/en-us/research/group/adaptive-systems-and-interaction/" target="\_blank">Microsoft Research</a> on <a href="https://www.bing.com/" target="\_blank">Bing</a> for a number of years, doing applied machine learning (see <a href="https://www.linkedin.com/in/alnurali/" target="\_blank">here</a> for more info).</p>
 
@@ -227,13 +235,13 @@ Tibshirani</a> and <a href="http://zicokolter.com/">Zico Kolter</a> on statistic
           <tr>
             <td style="vertical-align: middle;">
               <a href="https://arxiv.org/abs/2202.04166" target="_blank">
-                <img src="/assets/img/covid_regions_true_01-22-2021.png" width="75%" height="75%">
+                <img src="/assets/img/covid_regions_true_01-22-2021.png" style="max-width: 75%;">
               </a>
             </td>
             <td style="vertical-align: middle;">
               The Lifecycle of a Statistical Model: Model Failure Detection, Identification, and Refitting.
               <span class="author">
-                Alnur Ali, <a href="blah">Maxime Cauchois</a>, and John Duchi.
+                Alnur Ali, Maxime Cauchois, and John Duchi.
               </span>      
               [<a href="https://arxiv.org/abs/2202.04166" target="_blank">paper</a>]              
             </td>
@@ -242,7 +250,7 @@ Tibshirani</a> and <a href="http://zicokolter.com/">Zico Kolter</a> on statistic
           <tr>
             <td style="vertical-align: middle;">
               <a href="https://arxiv.org/abs/2008.04267" target="_blank">
-                <img src="/assets/img/airfoil_coverage_Standard_I-B.png" width="75%" height="75%">
+                <img src="/assets/img/airfoil_coverage_Standard_I-B.png" style="max-width: 75%;">
               </a>
             </td>
             <td style="vertical-align: middle;">
@@ -258,7 +266,7 @@ Tibshirani</a> and <a href="http://zicokolter.com/">Zico Kolter</a> on statistic
           <tr>
             <td style="vertical-align: middle;">
               <a href="https://arxiv.org/abs/1810.10082" target="_blank">
-                <img src="/assets/img/gf_map.png" width="75%" height="75%">
+                <img src="/assets/img/gf_map.png" style="max-width: 75%;">
               </a>
             </td>
             <td style="vertical-align: middle;">
@@ -274,7 +282,7 @@ Tibshirani</a> and <a href="http://zicokolter.com/">Zico Kolter</a> on statistic
           <tr>
             <td style="vertical-align: middle;">
               <a href="https://arxiv.org/abs/2105.14153" target="_blank">
-                <img src="/assets/img/exp_result.png" width="75%" height="75%">
+                <img src="/assets/img/exp_result.png" style="max-width: 75%;">
               </a>
             </td>
             <td style="vertical-align: middle;">
@@ -1913,7 +1921,7 @@ Tibshirani</a> and <a href="http://zicokolter.com/">Zico Kolter</a> on statistic
     <!-- &copy; Copyright 2023 Alnur Ali. -->
     
     
-    Last updated: July 16, 2023.
+    Last updated: July 17, 2023.
     
   </div>
 </footer>
