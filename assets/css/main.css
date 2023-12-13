@@ -75,21 +75,23 @@ footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding
 
 .distill a:hover { border-bottom-color: #B71C1C; text-decoration: none; }
 
-.projects .grid-item { width: 250px; margin-bottom: 10px; }
+.projects .grid-item { width: 49%; margin-bottom: 10px; }
 .projects .grid-item a { color: black; text-decoration: none; }
 .projects .grid-item a:hover { color: #B71C1C; }
-.projects .card img { width: 100%; }
+.projects .card img { width: 50%; height: 50%; padding-top: 10px; margin-left: auto; margin-right: auto; }
 
 .publications { margin-top: 2rem; }
 .publications h2.year { color: #e8e8e8; border-top: 1px solid #e8e8e8; padding-top: 1rem; margin-top: 2rem; margin-bottom: -2rem; text-align: right; }
-.publications ol.bibliography { list-style: disc; padding: 0; margin-top: 0; }
+.publications ol.bibliography { list-style: none; padding: 0; margin-top: 0; }
 .publications ol.bibliography li { margin-bottom: 1rem; }
 .publications ol.bibliography li .abbr { height: 2rem; margin-bottom: 0.5rem; }
 .publications ol.bibliography li .abbr abbr { display: inline-block; background-color: #B71C1C; padding-left: 1rem; padding-right: 1rem; }
-.publications ol.bibliography li .title { font-weight: lighter; }
+.publications ol.bibliography li .title { font-weight: bolder; }
 .publications ol.bibliography li .author a { border-bottom: 1px dashed #B71C1C; }
 .publications ol.bibliography li .author a:hover { border-bottom-style: solid; text-decoration: none; }
 .publications ol.bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
+.publications ol.bibliography li .links a.btn { color: black; border: 1px solid black; padding-left: 1rem; padding-right: 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; margin-left: 0; }
+.publications ol.bibliography li .links a.btn:hover { color: #B71C1C; border-color: #B71C1C; }
 .publications ol.bibliography li em.star { border-bottom: none; color: #B71C1C; font-style: normal; }
 .publications ol.bibliography li a.abstract, .publications ol.bibliography li a.bibtex { cursor: pointer; }
 .publications ol.bibliography li .hidden { font-size: 0.875rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
@@ -98,3 +100,17 @@ footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding
 .publications ol.bibliography li .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
 .publications ol.bibliography li span.abstract.hidden { border: dashed 1px white; }
 .publications ol.bibliography li span.abstract.hidden.open { border-color: #828282; }
+
+code { color: #828282; background-color: whitesmoke; border-radius: 2px; margin-right: 10px; }
+
+progress { /* Positioning */ position: fixed; left: 0; top: 56px; z-index: 10; /* Dimensions */ width: 100%; height: 1px; /* Reset the appearance */ -webkit-appearance: none; -moz-appearance: none; appearance: none; /* Get rid of the default border in Firefox/Opera. */ border: none; /* Progress bar container for Firefox/IE10  */ background-color: transparent; /* Progress bar value for IE10  */ color: #B71C1C; }
+
+progress::-webkit-progress-bar { background-color: transparent; }
+
+progress::-webkit-progress-value { background-color: #B71C1C; }
+
+progress::-moz-progress-bar { background-color: #B71C1C; }
+
+.progress-container { width: 100%; background-color: transparent; position: fixed; top: 56px; left: 0; height: 5px; display: block; }
+
+.progress-bar { background-color: #B71C1C; width: 0%; display: block; height: inherit; }

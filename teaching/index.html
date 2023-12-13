@@ -43,11 +43,12 @@
       
       
       
-      
       <a class="navbar-brand title font-weight-lighter" href="https://www.alnurali.com/">
        <span class="font-weight-bold">Alnur</span>   Ali
       </a>
+
       
+
       <!-- Navbar Toogle -->
       <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
@@ -57,82 +58,69 @@
       </button>
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
+          
           <!-- Home -->
           <li class="nav-item ">
-            <a class="nav-link" href="#about">
-              about me
+            <a class="nav-link" href="/">
+              home
               
             </a>
           </li>
-          <!-- Research interests -->
-          <li class="nav-item ">
-            <a class="nav-link" href="#research">
-              research
-              
-            </a>
-          </li>
+
           <!-- Publications -->
           <li class="nav-item ">
-            <a class="nav-link" href="#papers">
-              papers
+            <a class="nav-link" href="/publications/index.html">
+              publications
               
             </a>
-          </li>          
+          </li>
+
           <!-- Patents -->
           <li class="nav-item ">
-            <a class="nav-link" href="#patents">
+            <a class="nav-link" href="https://patents.google.com/?inventor=alnur+ali&oq=alnur+ali&sort=new" target="_blank">
               patents
               
             </a>
           </li>
-          <!-- AANOTE: not used vvv -->
-          <!-- Other pages -->
-          <!-- 
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+
+          <!-- Advising -->
           <li class="nav-item ">
-              <a class="nav-link" href="/papers/">
-                papers
-                
-              </a>
+            <a class="nav-link" href="/advising/index.html">
+              advising
+              
+            </a>
           </li>
-          
-          
-          
-          <li class="nav-item ">
-              <a class="nav-link" href="/projects/">
-                projects
-                
-              </a>
-          </li>
-          
-          
-          
+
+          <!-- Teaching -->
           <li class="nav-item active">
-              <a class="nav-link" href="/teaching/">
-                teaching
-                
-                <span class="sr-only">(current)</span>
-                
-              </a>
+            <a class="nav-link" href="/teaching/index.html">
+              teaching
+              
+              <span class="sr-only">(current)</span>
+              
+            </a>
           </li>
-          
-           -->
+
+          <!-- Personal -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/personal/index.html">
+              personal
+              
+            </a>
+          </li>
+
         </ul>
       </div>
     </div>
   </nav>
-
+  <!--  -->
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  <!-- -->
 </header>
 
 
@@ -143,13 +131,37 @@
 
   <header class="post-header">
     <h1 class="post-title">teaching</h1>
-    <p class="post-description">Materials for courses you taught. Replace this text with your description.</p>
+    <p class="post-description"></p>
   </header>
 
   <article>
-    <p>For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to <code class="language-plaintext highlighter-rouge">_projects/</code> so that you can have a dedicated page for each course.</p>
+    <p>Back in grad school, I was a teaching assistant for Carnegie Mellon’s convex optimization <a href="https://www.stat.cmu.edu/~ryantibs/convexopt-F16/" target="\_blank">course</a>.  We covered:</p>
+<ul>
+  <li>first-order methods</li>
+  <li>second-order methods</li>
+  <li>interior point methods</li>
+  <li>momentum and acceleration</li>
+  <li>stochastic optimization</li>
+  <li>distributed optimization</li>
+  <li>non-convex optimization (e.g., quasi-convex optimization, mixed integer programming, …)</li>
+  <li>contact points with statistics (e.g., implicit regularization)</li>
+  <li>some convex analysis</li>
+</ul>
 
-<p>Organize your courses by years, topics, or universities, however you like!</p>
+<p>Somewhat more recently, I taught an (extremely talented) group of high schoolers as part of Stanford’s “STEM to SHTEM” <a href="https://compression.stanford.edu/outreach/shtem-summer-internships-high-schoolers-and-community-college-students" target="\_blank">summer program</a>.  We covered:</p>
+<ul>
+  <li>the basics of supervised learning</li>
+  <li>how to build a (modern) recommendation system
+    <ul>
+      <li>matrix completion / factorization-based methods</li>
+      <li>neighborhood-based methods</li>
+      <li>prediction-based methods</li>
+      <li>bandits</li>
+      <li>uncertainty quantification</li>
+      <li>evaluation</li>
+    </ul>
+  </li>
+</ul>
 
   </article>
 
@@ -165,7 +177,7 @@
     <!-- &copy; Copyright 2023 Alnur Ali. -->
     
     
-    Last updated: October 06, 2023.
+    Last updated: December 13, 2023.
     
   </div>
 </footer>
@@ -184,7 +196,7 @@
 <script src="/assets/js/common.js"></script>
 
 <!-- Code Syntax Highlighting -->
-<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/.css" />
 
 
 <!-- Load KaTeX -->
@@ -227,6 +239,85 @@ ga('create', 'UA-37400115-3', 'auto');
 ga('send', 'pageview');
 </script>
 
+
+  
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
 
 
 </html>

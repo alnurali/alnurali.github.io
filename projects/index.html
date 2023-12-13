@@ -43,11 +43,12 @@
       
       
       
-      
       <a class="navbar-brand title font-weight-lighter" href="https://www.alnurali.com/">
        <span class="font-weight-bold">Alnur</span>   Ali
       </a>
+
       
+
       <!-- Navbar Toogle -->
       <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
@@ -57,82 +58,67 @@
       </button>
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
+          
           <!-- Home -->
           <li class="nav-item ">
-            <a class="nav-link" href="#about">
-              about me
+            <a class="nav-link" href="/">
+              home
               
             </a>
           </li>
-          <!-- Research interests -->
-          <li class="nav-item ">
-            <a class="nav-link" href="#research">
-              research
-              
-            </a>
-          </li>
+
           <!-- Publications -->
           <li class="nav-item ">
-            <a class="nav-link" href="#papers">
-              papers
+            <a class="nav-link" href="/publications/index.html">
+              publications
               
             </a>
-          </li>          
+          </li>
+
           <!-- Patents -->
           <li class="nav-item ">
-            <a class="nav-link" href="#patents">
+            <a class="nav-link" href="https://patents.google.com/?inventor=alnur+ali&oq=alnur+ali&sort=new" target="_blank">
               patents
               
             </a>
           </li>
-          <!-- AANOTE: not used vvv -->
-          <!-- Other pages -->
-          <!-- 
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+
+          <!-- Advising -->
           <li class="nav-item ">
-              <a class="nav-link" href="/papers/">
-                papers
-                
-              </a>
+            <a class="nav-link" href="/advising/index.html">
+              advising
+              
+            </a>
           </li>
-          
-          
-          
-          <li class="nav-item active">
-              <a class="nav-link" href="/projects/">
-                projects
-                
-                <span class="sr-only">(current)</span>
-                
-              </a>
-          </li>
-          
-          
-          
+
+          <!-- Teaching -->
           <li class="nav-item ">
-              <a class="nav-link" href="/teaching/">
-                teaching
-                
-              </a>
+            <a class="nav-link" href="/teaching/index.html">
+              teaching
+              
+            </a>
           </li>
-          
-           -->
+
+          <!-- Personal -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/personal/index.html">
+              personal
+              
+            </a>
+          </li>
+
         </ul>
       </div>
     </div>
   </nav>
-
+  <!--  -->
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  <!-- -->
 </header>
 
 
@@ -151,6 +137,82 @@
 
   
   
+  <div class="grid-item">
+    
+    <a href="https://arxiv.org/abs/2202.04166" target="_blank">
+    
+      <div class="card hoverable">
+        
+        <img src="/assets/img/covid_regions_true_01-22-2021.png" alt="project thumbnail" />
+        
+        <div class="card-body">
+          <h2 class="card-title text-lowercase">The Lifecycle of a Statistical Model: Model Failure Detection, Identification, and Refitting</h2>
+          <p class="card-text">We develop methodology (and associated theory) that (i) tracks deployed model performance, (ii) raises an alarm when performance degrades, and (iii) generates interpretable diagnostics.</p>
+          <div class="row ml-1 mr-1 p-0">
+            
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="grid-item">
+    
+    <a href="https://arxiv.org/abs/2008.04267" target="_blank">
+    
+      <div class="card hoverable">
+        
+        <img src="/assets/img/airfoil_coverage_Standard_I-B.png" alt="project thumbnail" />
+        
+        <div class="card-body">
+          <h2 class="card-title text-lowercase">Robust Validation: Confident Predictions Even When Distributions Shift</h2>
+          <p class="card-text">We develop methodology and theory that repairs and protects any deployed model from future degradations in performance without retraining.</p>
+          <div class="row ml-1 mr-1 p-0">
+            
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="grid-item">
+    
+    <a href="https://stanford.edu/\%7Eboyd/papers/oracle_struc_composite.html" target="_blank">
+    
+      <div class="card hoverable">
+        
+        <img src="/assets/img/exp_result.png" alt="project thumbnail" />
+        
+        <div class="card-body">
+          <h2 class="card-title text-lowercase">Minimizing Oracle-Structured Composite Functions</h2>
+          <p class="card-text">We develop reliable algorithms for (re)training models without carefully tuning step sizes.</p>
+          <div class="row ml-1 mr-1 p-0">
+            
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="grid-item">
+    
+    <a href="https://arxiv.org/abs/1810.10082" target="_blank">
+    
+      <div class="card hoverable">
+        
+        <img src="/assets/img/gf_map.png" alt="project thumbnail" />
+        
+        <div class="card-body">
+          <h2 class="card-title text-lowercase">A Continuous-Time View of Early Stopping for Least Squares</h2>
+          <p class="card-text">We develop statistical theory advancing our understanding of popular optimization heuristics.</p>
+          <div class="row ml-1 mr-1 p-0">
+            
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
 
 </div>
 
@@ -168,7 +230,7 @@
     <!-- &copy; Copyright 2023 Alnur Ali. -->
     
     
-    Last updated: October 06, 2023.
+    Last updated: December 13, 2023.
     
   </div>
 </footer>
@@ -187,7 +249,7 @@
 <script src="/assets/js/common.js"></script>
 
 <!-- Code Syntax Highlighting -->
-<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/.css" />
 
 
 <!-- Load KaTeX -->
@@ -230,6 +292,85 @@ ga('create', 'UA-37400115-3', 'auto');
 ga('send', 'pageview');
 </script>
 
+
+  
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
 
 
 </html>
